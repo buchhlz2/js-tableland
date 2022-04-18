@@ -92,6 +92,7 @@ export async function create(
   const message = await GeneralizedRPC.call(this, "createTable", {
     tableId: tableId,
     statement: query,
+    description: options.description,
     dryrun: options.dryrun,
   });
 
